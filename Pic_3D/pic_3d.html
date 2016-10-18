@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跳跃的3D图片</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            width: 600px;
+            height: 600px;
+            margin: 50px auto;
+            transform-style: preserve-3d;
+            perspective: 1200px;
+        }
+
+        .ke {
+            width: 300px;
+            height: 437px;
+            display: block;
+            margin: 50px auto;
+            background: url(./img/IMG_4306.JPG) 0 0 / 300px 437px no-repeat;
+            box-shadow: -7px 10px 10px #333;
+            transform: rotatex(60deg) rotatey(3deg) rotatez(-25deg);
+            transition: all 1s ease-out;
+        }
+        .ke:hover {
+            transform: rotate3D(0,0,0,0deg);
+            box-shadow: -50px 60px 10px #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="" class="ke"></a>
+</div>
+</body>
+</html>
